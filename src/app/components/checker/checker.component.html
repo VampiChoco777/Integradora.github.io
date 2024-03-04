@@ -1,0 +1,26 @@
+
+
+<div *ngIf="isBalanceCorrect()" class="success">El balance es correcto !!</div>
+<div *ngIf="!isBalanceCorrect()" class="error">El balance es incorrecto !!</div>
+
+<div class="container">
+  <div class="input-group">
+    <label>ACTIVOS: <input [(ngModel)]="active"><button style="margin-left: 3px;" (click)="addActive()">AGREGAR</button></label>
+    <div class="data-container" *ngFor="let value of activeValues">
+      <div class="data-box">{{value}}</div>
+    </div>
+  </div>
+  <div class="input-group">
+    <label>PASIVOS: <input [(ngModel)]="passive"><button style="margin-left: 3px;"  (click)="addPassive()">AGREGAR</button></label>
+    <div class="data-container" *ngFor="let value of passiveValues">
+      <div class="data-box">{{value}}</div>
+    </div>
+  </div>
+  <div class="input-group">
+    <label>CAPITAL: <input [(ngModel)]="capital"><button style="margin-left: 3px;" (click)="addCapital()">AGREGAR</button></label>
+    <div class="data-container" *ngFor="let value of capitalValues">
+      <div class="data-box">{{value}}</div>
+    </div>
+  </div>
+</div>
+

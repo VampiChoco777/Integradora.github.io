@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  margin-top: 5px;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  flex: 1 0 200px;
+  margin-left: auto;
+  cursor: pointer;
+  border-radius: 20px;
+  gap: 1px;
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.input-group input {
+  padding: 5px;
+  border: 1px solid #007BFF;
+  border-radius: 5px;
+}
+
+.input-group button {
+  padding: 5px 10px;
+  background-color: #007BFF;
+  gap: 0px;
+  margin-left: auto;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input-group button:hover {
+  background-color: #0056b3;
+}
+
+.message, .error, .success {
+  font-size: 40px;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+
+}
+.success {
+  color: white;
+}
+
+.error {
+  color: white;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  width: 20%;
+}
+
+.data-box {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 0 5px;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 5px;
+  border-color: black;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+}
